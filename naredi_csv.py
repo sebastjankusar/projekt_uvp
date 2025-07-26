@@ -1,7 +1,7 @@
 import csv
 
 def shrani_filme(filmi):
-     with open("filmi.csv", "w") as dat:
+     with open("filmi.csv", "w", encoding="utf-8") as dat:
         pisatelj = csv.writer(dat)
         pisatelj.writerow(
             [
