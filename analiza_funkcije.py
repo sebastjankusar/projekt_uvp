@@ -12,7 +12,7 @@ def doloci_visjo_oceno(vrstica):
     
 
 def je_poseben(vrstica):
-    if vrstica["razlika_v_ocenah"] >= 4 and :
+    if vrstica["razlika_v_ocenah"] >= 4:
         return True
     else:
         return False
