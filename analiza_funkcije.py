@@ -9,3 +9,10 @@ def doloci_visjo_oceno(vrstica):
         return "IMDb"
     else:
         return "Rotten Tomatoes"
+    
+
+def je_poseben(vrstica):
+    if vrstica["razlika_v_ocenah"] >= 4 and :
+        return True
+    else:
+        return False
