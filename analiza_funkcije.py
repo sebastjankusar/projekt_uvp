@@ -9,10 +9,14 @@ def doloci_visjo_oceno(vrstica):
         return "IMDb"
     else:
         return "Rotten Tomatoes"
-    
+
 
 def je_poseben(vrstica):
-    if vrstica["razlika_v_ocenah"] >= 4:
-        return True
-    else:
-        return False
+    return vrstica["naslov"] in {
+        "Epic Movie",
+        "Hannah Montana & Miley Cyrus: Best of Both Worlds Concert",
+        "Police Academy 5: Assignment Miami Beach",
+        "The Toy",
+        "Toy Story",
+        "The Dark Knight"
+    }

@@ -1,7 +1,3 @@
-#spletna_stran = https://www.listchallenges.com/every-number-1-movie-in-the-usa-box-office
-#
-#30 strani, na koncu linka /list/{stevilka_strani}
-
 import requests
 import os
 
@@ -13,7 +9,6 @@ def naredi_html_strani():
     }
     # kopiran iz https://medium.com/@datajournal/http-headers-for-web-scraping-9073c67e22f2 (example header)
 
-    # kopiranje html-jev v VS Code
     for stran in range(1, 31):
         if stran == 1:
             odgovor = requests.get(url,
